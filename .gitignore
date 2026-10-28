@@ -1,0 +1,11 @@
+/vendor/
+/.phpunit.cache/
+composer.lock
+.phpunit.result.cache
+/tools/parity/parity
+.idea/
+.vscode/
+.DS_Store
+*.swp
+__pycache__/
+dump.rdb

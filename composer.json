@@ -1,0 +1,69 @@
+{
+    "name": "shaarifsabah/laravel-watchman",
+    "description": "Sanctions screening for Laravel: a native PHP port of Moov Watchman (OFAC, CSL, FinCEN 311, EU, UK, UN, OpenSanctions) with an optional HTTP driver for the Go server.",
+    "type": "library",
+    "license": "Apache-2.0",
+    "keywords": [
+        "laravel",
+        "sanctions",
+        "ofac",
+        "aml",
+        "kyc",
+        "screening",
+        "watchman",
+        "compliance"
+    ],
+    "homepage": "https://github.com/shaarifsabah/laravel-watchman",
+    "support": {
+        "issues": "https://github.com/shaarifsabah/laravel-watchman/issues",
+        "source": "https://github.com/shaarifsabah/laravel-watchman",
+        "security": "https://github.com/shaarifsabah/laravel-watchman/security/policy"
+    },
+    "require": {
+        "php": "^8.2",
+        "ext-curl": "*",
+        "ext-dom": "*",
+        "ext-intl": "*",
+        "ext-json": "*",
+        "ext-libxml": "*",
+        "ext-mbstring": "*",
+        "ext-simplexml": "*",
+        "laravel/framework": "^10.0|^11.0|^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0|^10.0",
+        "phpunit/phpunit": "^10.0|^11.0"
+    },
+    "suggest": {
+        "ext-igbinary": "Smaller and faster index storage (recommended)",
+        "ext-redis": "phpredis client for the default Redis store (or install predis/predis)",
+        "predis/predis": "Pure-PHP Redis client, if ext-redis is not installed",
+        "ext-zip": "Required to read the UK sanctions list when it is published as .ods",
+        "guzzlehttp/guzzle": "Required by the http driver (ships with laravel/framework installs)"
+    },
+    "autoload": {
+        "psr-4": {
+            "Watchman\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Watchman\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Watchman\\Laravel\\WatchmanServiceProvider"
+            ],
+            "aliases": {
+                "Watchman": "Watchman\\Laravel\\Facades\\Watchman"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

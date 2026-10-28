@@ -1,0 +1,25 @@
+laravel-watchman
+Copyright 2026 shaarifsabah (https://github.com/shaarifsabah) and contributors
+
+This product is a PHP/Laravel port of moov-io/watchman
+(https://github.com/moov-io/watchman, upstream commit 7f44b4b6),
+Copyright The Moov Authors, licensed under the Apache License 2.0.
+The Go source was translated to PHP and modified; it is not an official
+Moov product and is not affiliated with or endorsed by Moov Financial.
+
+Generated lookup tables in resources/data are derived from:
+  - github.com/abadojack/whatlanggo v1.0.1 (MIT, Copyright (c) 2017 Abado Jack Mtulla)
+  - github.com/bbalet/stopwords v1.0.0 (BSD, Copyright (c) 2015 Benjamin BALET;
+    stopword lists by Jacques Savoy et al.)
+  - github.com/dongri/phonenumber v0.1.13 (MIT, Copyright (c) 2019 Dongri Jin)
+  - github.com/moov-io/iso3166 v0.4.0 (Apache License 2.0)
+  - The Public Suffix List (Mozilla Public License 2.0), https://publicsuffix.org/
+    resources/data/public_suffix.php is a derived form of public_suffix_list.dat;
+    its source is available at the URL above.
+
+String similarity algorithms in src/StringScore are ported from
+github.com/PhonoGrams/* (Apache License 2.0) and
+github.com/xrash/smetrics (MIT, Copyright (C) 2016 Felipe da Cunha Gonçalves).
+
+The full license texts of the MIT, BSD and MPL components are in the
+licenses/ directory. Apache-2.0 components are covered by LICENSE.

@@ -1,0 +1,32 @@
+name: Bug report
+description: Something does not work as documented
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what you got instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How to reproduce
+      description: Search parameters, config values (no secrets) and the command or code you ran.
+      render: shell
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: Package version, PHP version, Laravel version, store (redis / database / memory)
+      placeholder: "v1.0.0, PHP 8.3.6, Laravel 12.3, redis"
+    validations:
+      required: true
+  - type: textarea
+    id: go
+    attributes:
+      label: Go Watchman result (optional)
+      description: If the score differs from the Go server for the same query, paste both results.
