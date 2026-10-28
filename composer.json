@@ -28,11 +28,11 @@
         "ext-libxml": "*",
         "ext-mbstring": "*",
         "ext-simplexml": "*",
-        "laravel/framework": "^10.0|^11.0|^12.0"
+        "laravel/framework": "^12.0|^13.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^8.0|^9.0|^10.0",
-        "phpunit/phpunit": "^10.0|^11.0"
+        "orchestra/testbench": "^10.0|^11.0",
+        "phpunit/phpunit": "^11.5|^12.0"
     },
     "suggest": {
         "ext-igbinary": "Smaller and faster index storage (recommended)",

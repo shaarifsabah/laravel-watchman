@@ -16,6 +16,7 @@ First public release.
 - Index stores: Redis (default), database, in-memory; atomic generation swap on refresh.
 - Laravel integration: config, facade, /v2 routes, artisan commands, queued scheduled refresh, file ingestion.
 - `http` driver for an existing Watchman Go server.
+- Supports Laravel 12 and 13 on PHP 8.2–8.5 (Laravel 13 needs PHP 8.3+).
 - `Watchman::search()` rejects unknown parameter names with `InvalidArgumentException`, like the HTTP API.
 - Safe defaults: HTTP routes are off until enabled, admin routes register only behind an auth middleware,
   no OpenSanctions datasets are downloaded unless configured.

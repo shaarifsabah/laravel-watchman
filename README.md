@@ -73,7 +73,7 @@ Built-in list names:
 - **PHP:** 8.2 or newer. You need the `intl`, `mbstring`, `dom`, `simplexml` and `curl` extensions.
   - `igbinary` is recommended, because it makes the index smaller and faster.
   - `zip` is needed only to read the UK list from an `.ods` file.
-- **Laravel:** 10, 11 or 12.
+- **Laravel:** 12 or 13. (Laravel 10 and 11 no longer receive security fixes, and Composer refuses to install them.)
 - **For the default store:** Redis, with either phpredis (`REDIS_CLIENT=phpredis`, the Laravel default) or predis.
 - **Without Redis:** any database Laravel supports (MySQL, PostgreSQL, SQLite or SQL Server), used through the `database` store.
 
